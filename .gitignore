@@ -1,0 +1,5 @@
+# Never commit secrets or local config
+.env
+secrets/
+*.sql
+__pycache__/

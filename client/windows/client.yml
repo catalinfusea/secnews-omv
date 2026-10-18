@@ -1,0 +1,14 @@
+# ntfy client on Windows -> %AppData%\ntfy\client.yml
+# Run: ntfy.exe subscribe --from-config   (started at logon, see docs/windows-client.md)
+#
+# The command gets the title/message through the NTFY_TITLE / NTFY_MESSAGE environment
+# variables, read inside the PowerShell script. Never put %NTFY_MESSAGE% on the command
+# line: the content comes from feeds and could inject commands through cmd.
+
+default-host: http://CHANGE_ME_OMV_HOST:8190
+# Token of the read-only user: ntfy token add --label=pc <reader>
+default-token: tk_CHANGE_ME
+
+subscribe:
+  - topic: secnews
+    command: powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -WindowStyle Hidden -File "%LOCALAPPDATA%\secnews\ntfy-toast.ps1"

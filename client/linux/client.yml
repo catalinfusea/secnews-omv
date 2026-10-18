@@ -1,0 +1,11 @@
+# ntfy client on a Linux desktop -> ~/.config/ntfy/client.yml
+# Start as a user service: systemctl --user enable --now ntfy-client
+# Needs notify-send (package libnotify-bin on Debian/Ubuntu). Not tested.
+
+default-host: http://CHANGE_ME_OMV_HOST:8190
+# Token of the read-only user: ntfy token add --label=desktop <reader>
+default-token: tk_CHANGE_ME
+
+subscribe:
+  - topic: secnews
+    command: 'notify-send -a SecNews "$t" "$m"'

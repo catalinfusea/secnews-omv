@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  secnews-omv feed list for Miniflux (Settings -> Import).
+  Most URLs were checked on 2026-10-17 to return a valid RSS/Atom feed; the rest were
+  imported into Miniflux. Feeds that failed after import were fixed (Google Threat
+  Intelligence) or removed (Check Point Research: bot protection; OpenMediaVault tags: empty).
+  Feeds can break at any time; Miniflux flags them with an error.
+-->
+<opml version="2.0">
+  <head>
+    <title>SecNews feeds</title>
+    <dateCreated>Sat, 17 Oct 2026 14:30:00 +0300</dateCreated>
+  </head>
+  <body>
+    <outline text="1 - Alerts and advisories" title="1 - Alerts and advisories">
+      <outline type="rss" text="CERT-EU Security Advisories" title="CERT-EU Security Advisories" xmlUrl="https://cert.europa.eu/publications/security-advisories-rss" htmlUrl="https://cert.europa.eu/publications/security-advisories"/>
+      <outline type="rss" text="MSRC Security Update Guide" title="MSRC Security Update Guide" xmlUrl="https://api.msrc.microsoft.com/update-guide/rss" htmlUrl="https://msrc.microsoft.com/update-guide"/>
+      <outline type="rss" text="NCSC UK (toate)" title="NCSC UK (toate)" xmlUrl="https://www.ncsc.gov.uk/api/1/services/v1/all-rss-feed.xml" htmlUrl="https://www.ncsc.gov.uk/"/>
+      <outline type="rss" text="CISA Cybersecurity Advisories" title="CISA Cybersecurity Advisories" xmlUrl="https://www.cisa.gov/cybersecurity-advisories/all.xml" htmlUrl="https://www.cisa.gov/news-events/cybersecurity-advisories"/>
+    </outline>
+    <outline text="2 - Vulnerability and exploit research" title="2 - Vulnerability and exploit research">
+      <outline type="rss" text="ZDI Published Advisories" title="ZDI Published Advisories" xmlUrl="https://www.zerodayinitiative.com/rss/published/" htmlUrl="https://www.zerodayinitiative.com/advisories/published/"/>
+      <outline type="rss" text="Google Project Zero" title="Google Project Zero" xmlUrl="https://projectzero.google/feed.xml" htmlUrl="https://projectzero.google/"/>
+      <outline type="rss" text="watchTowr Labs" title="watchTowr Labs" xmlUrl="https://labs.watchtowr.com/rss/" htmlUrl="https://labs.watchtowr.com/"/>
+      <outline type="rss" text="Horizon3.ai" title="Horizon3.ai" xmlUrl="https://www.horizon3.ai/feed/" htmlUrl="https://www.horizon3.ai/"/>
+      <outline type="rss" text="Exploit-DB" title="Exploit-DB" xmlUrl="https://www.exploit-db.com/rss.xml" htmlUrl="https://www.exploit-db.com/"/>
+      <outline type="rss" text="Full Disclosure" title="Full Disclosure" xmlUrl="https://seclists.org/rss/fulldisclosure.rss" htmlUrl="https://seclists.org/fulldisclosure/"/>
+    </outline>
+    <outline text="3 - Threat intel and DFIR" title="3 - Threat intel and DFIR">
+      <outline type="rss" text="The DFIR Report" title="The DFIR Report" xmlUrl="https://thedfirreport.com/feed/" htmlUrl="https://thedfirreport.com/"/>
+      <outline type="rss" text="Cisco Talos" title="Cisco Talos" xmlUrl="https://blog.talosintelligence.com/rss/" htmlUrl="https://blog.talosintelligence.com/"/>
+      <outline type="rss" text="Unit 42" title="Unit 42" xmlUrl="https://unit42.paloaltonetworks.com/feed/" htmlUrl="https://unit42.paloaltonetworks.com/"/>
+      <outline type="rss" text="Securelist (Kaspersky)" title="Securelist (Kaspersky)" xmlUrl="https://securelist.com/feed/" htmlUrl="https://securelist.com/"/>
+      <outline type="rss" text="SANS Internet Storm Center" title="SANS Internet Storm Center" xmlUrl="https://isc.sans.edu/rssfeed_full.xml" htmlUrl="https://isc.sans.edu/"/>
+    </outline>
+    <outline text="3b - Threat intel and DFIR (more)" title="3b - Threat intel and DFIR (more)">
+      <outline type="rss" text="ESET WeLiveSecurity" title="ESET WeLiveSecurity" xmlUrl="https://www.welivesecurity.com/en/rss/feed/" htmlUrl="https://www.welivesecurity.com/"/>
+      <outline type="rss" text="Microsoft Threat Intelligence" title="Microsoft Threat Intelligence" xmlUrl="https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/" htmlUrl="https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/"/>
+      <outline type="rss" text="Google Threat Intelligence (Mandiant)" title="Google Threat Intelligence (Mandiant)" xmlUrl="https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v" htmlUrl="https://cloud.google.com/blog/topics/threat-intelligence"/>
+      <outline type="rss" text="Red Canary" title="Red Canary" xmlUrl="https://redcanary.com/feed/" htmlUrl="https://redcanary.com/blog/"/>
+      <outline type="rss" text="Huntress" title="Huntress" xmlUrl="https://www.huntress.com/blog/rss.xml" htmlUrl="https://www.huntress.com/blog"/>
+      <outline type="rss" text="Elastic Security Labs" title="Elastic Security Labs" xmlUrl="https://www.elastic.co/security-labs/rss/feed.xml" htmlUrl="https://www.elastic.co/security-labs"/>
+      <outline type="rss" text="Sophos X-Ops (Threat Research)" title="Sophos X-Ops (Threat Research)" xmlUrl="https://news.sophos.com/en-us/category/threat-research/feed/" htmlUrl="https://news.sophos.com/en-us/category/threat-research/"/>
+    </outline>
+    <outline text="4 - News" title="4 - News">
+      <outline type="rss" text="BleepingComputer" title="BleepingComputer" xmlUrl="https://www.bleepingcomputer.com/feed/" htmlUrl="https://www.bleepingcomputer.com/"/>
+      <outline type="rss" text="The Hacker News" title="The Hacker News" xmlUrl="https://feeds.feedburner.com/TheHackersNews" htmlUrl="https://thehackernews.com/"/>
+      <outline type="rss" text="The Record" title="The Record" xmlUrl="https://therecord.media/feed" htmlUrl="https://therecord.media/"/>
+      <outline type="rss" text="SecurityWeek" title="SecurityWeek" xmlUrl="https://www.securityweek.com/feed/" htmlUrl="https://www.securityweek.com/"/>
+      <outline type="rss" text="Krebs on Security" title="Krebs on Security" xmlUrl="https://krebsonsecurity.com/feed/" htmlUrl="https://krebsonsecurity.com/"/>
+    </outline>
+    <outline text="5 - Tool releases" title="5 - Tool releases">
+      <outline type="rss" text="Wazuh releases" title="Wazuh releases" xmlUrl="https://github.com/wazuh/wazuh/releases.atom" htmlUrl="https://github.com/wazuh/wazuh/releases"/>
+      <outline type="rss" text="Ollama releases" title="Ollama releases" xmlUrl="https://github.com/ollama/ollama/releases.atom" htmlUrl="https://github.com/ollama/ollama/releases"/>
+      <outline type="rss" text="Miniflux releases" title="Miniflux releases" xmlUrl="https://github.com/miniflux/v2/releases.atom" htmlUrl="https://github.com/miniflux/v2/releases"/>
+      <outline type="rss" text="ntfy releases" title="ntfy releases" xmlUrl="https://github.com/binwiederhier/ntfy/releases.atom" htmlUrl="https://github.com/binwiederhier/ntfy/releases"/>
+      <outline type="rss" text="SigmaHQ releases" title="SigmaHQ releases" xmlUrl="https://github.com/SigmaHQ/sigma/releases.atom" htmlUrl="https://github.com/SigmaHQ/sigma/releases"/>
+      <outline type="rss" text="pfSense tags" title="pfSense tags" xmlUrl="https://github.com/pfsense/pfsense/tags.atom" htmlUrl="https://github.com/pfsense/pfsense/tags"/>
+    </outline>
+  </body>
+</opml>
