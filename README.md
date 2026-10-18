@@ -4,7 +4,7 @@ A self-hosted security news reader with push alerts, running on **OpenMediaVault
 
 [Miniflux](https://miniflux.app) collects RSS/Atom feeds (advisories, CERT bulletins, threat intel, news). For selected feeds, it publishes new entries to a self-hosted [ntfy](https://ntfy.sh) server, which pushes them to an Android phone and to a Windows PC as native toast notifications. Everything else waits in the Miniflux web UI.
 
-Built for personal use on a home LAN. Write-up: [TODO: Medium link]
+Built for personal use on a home LAN. Write-up: [A self-hosted security news feed with push alerts on OpenMediaVault](https://medium.com/@catalin.fusea/a-self-hosted-security-news-feed-with-push-alerts-on-openmediavault-330f329d84ad)
 
 ```
 RSS/Atom feeds ──> Miniflux ──(push only for selected feeds)──> ntfy ──> Android app
